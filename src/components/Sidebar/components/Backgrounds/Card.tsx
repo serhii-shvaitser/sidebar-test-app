@@ -4,27 +4,17 @@ import { Button } from "@/components/ui/button";
 import LoadingCard from "@/components/Sidebar/components/Backgrounds/LoadingCard";
 
 import Foreground from "@/assets/images/user.png";
+import Background from "@/assets/images/bg_1.png";
 import LikeIcon from "@/assets/icons/like_icon.png";
 import DislikeIcon from "@/assets/icons/dislike_icon.png";
 
-type BackgroundData = {
-  name?: string;
+type CardProps = {
   isLoading?: boolean;
   isDefault?: boolean;
   isHovered?: boolean;
 };
 
-type CardProps = {
-  data: BackgroundData;
-};
-
-const getImageUrl = (name: string) => {
-  return new URL(`./assets/images/${name}.png`, import.meta.url).href;
-};
-
-function Card({ data }: CardProps) {
-  const { isLoading, isDefault, isHovered, name } = data;
-
+function Card({ isLoading, isDefault, isHovered }: CardProps) {
   return (
     <div
       className={cn(
@@ -41,11 +31,7 @@ function Card({ data }: CardProps) {
         <LoadingCard />
       ) : (
         <>
-          <img
-            className="h-full w-full object-cover"
-            src={getImageUrl(name || "")}
-            alt={name}
-          />
+          <img className="h-full w-full object-cover" src={Background} />
           {isHovered ? (
             <div className="absolute bottom-3.75 flex w-full justify-center gap-2">
               <Button className="h-10 cursor-pointer rounded-xl border border-[#FFFFFF33] bg-[#696965] px-2.25 py-0.5">

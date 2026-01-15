@@ -3,23 +3,6 @@ import Card from "@/components/Sidebar/components/Backgrounds/Card";
 
 import GenerateAiIcon from "@/assets/icons/generate_AI_icon.png";
 
-const backgrounds = [
-  {
-    isLoading: true,
-  },
-  {
-    name: "bg_1",
-    isDefault: true,
-  },
-  {
-    name: "bg_2",
-  },
-  {
-    name: "bg_3",
-    isHovered: true,
-  },
-];
-
 function Backgrounds() {
   return (
     <div className="grid gap-9.25">
@@ -34,9 +17,10 @@ function Backgrounds() {
       <div className="grid gap-2.5">
         <h3 className="text-sm">Your backgrounds</h3>
         <div className="grid grid-cols-3 gap-3">
-          {backgrounds.map((backgroundData, i) => (
-            <Card key={i} data={backgroundData} />
-          ))}
+          <Card isLoading />
+          <Card isDefault />
+          <Card />
+          <Card isHovered />
         </div>
       </div>
     </div>
