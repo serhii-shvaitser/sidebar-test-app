@@ -42,6 +42,7 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-italian: "ItalianPlate", ui-sans-serif, system-ui, sans-serif;
 }
 
 :root {
@@ -119,5 +120,189 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+  /* 100 - Thin */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Thin.ttf")
+      format("truetype");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Thin Italic.ttf")
+      format("truetype");
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 200 - Ultralight */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Ultralight.ttf")
+      format("truetype");
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Ultralight Italic.ttf")
+      format("truetype");
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 250/300 - Extralight */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Extralight.ttf")
+      format("truetype");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Extralight Italic.ttf")
+      format("truetype");
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 350 - Light */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Light.ttf")
+      format("truetype");
+    font-weight: 350;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Light Italic.ttf")
+      format("truetype");
+    font-weight: 350;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 400 - Regular */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded.ttf")
+      format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Italic.ttf")
+      format("truetype");
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 500 - Medium */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Medium.ttf")
+      format("truetype");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Medium Italic.ttf")
+      format("truetype");
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 600 - Demibold */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Demibold.ttf")
+      format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Demibold Italic.ttf")
+      format("truetype");
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 700 - Bold */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Bold.ttf")
+      format("truetype");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Bold Italic.ttf")
+      format("truetype");
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 800 - Extrabold */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Extrabold.ttf")
+      format("truetype");
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Extrabold Italic.ttf")
+      format("truetype");
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  /* 900 - Black */
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Black.ttf")
+      format("truetype");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: "ItalianPlate";
+    src: url("./assets/fonts/italian-plate/Italian Plate No2 Expanded Black Italic.ttf")
+      format("truetype");
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+  }
+
+  :root {
+    --font-sans: "ItalianPlate", ui-sans-serif, system-ui, sans-serif;
+    --font-italian: "ItalianPlate", sans-serif;
   }
 }
