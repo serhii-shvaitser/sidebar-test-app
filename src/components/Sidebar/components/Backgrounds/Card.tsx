@@ -18,6 +18,10 @@ type CardProps = {
   data: BackgroundData;
 };
 
+const getImageUrl = (name: string) => {
+  return new URL(`./assets/images/${name}.png`, import.meta.url).href;
+};
+
 function Card({ data }: CardProps) {
   const { isLoading, isDefault, isHovered, name } = data;
 
@@ -39,7 +43,7 @@ function Card({ data }: CardProps) {
         <>
           <img
             className="h-full w-full object-cover"
-            src={`/assets/${name}.png`}
+            src={getImageUrl(name || "")}
             alt={name}
           />
           {isHovered ? (
