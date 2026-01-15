@@ -39,7 +39,10 @@ function Form() {
                 className="h-5 w-5 object-contain"
               />
             </Button>
-            <Button variant="ghost" className="cursor-pointer px-1.5">
+            <Button
+              variant="ghost"
+              className="cursor-pointer bg-transparent px-1.5 hover:bg-transparent"
+            >
               <img src={NextIcon} alt="NextIcon" className="h-5 w-5" />
             </Button>
           </div>
